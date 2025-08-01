@@ -1,0 +1,167 @@
+<html>
+<head>
+<title> Arena CAFE </title>
+ <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+    body, html {
+      height: 100%;
+      font-family: "Inconsolata", sans-serif;
+    }
+
+    .bgimg {
+      background-position: center;
+      background-size: cover;
+      background-image: url("cafeteria.jpg");
+      min-height: 75%;
+    }
+
+    .menu {
+      display: none;
+    }
+    </style>
+  </head>
+<body bgcolor="#FFAE87">
+
+<center><div class="top">
+  <div class="w3-row w3-padding w3-Brown">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-Brown w3-animate-zoom">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-Brown w3-animate-zoom">ABOUT</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block w3-Brown w3-animate-zoom">MENU</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-Brown w3-animate-zoom">WHERE</a>
+      </center>
+    </div>
+  </div>
+</div>
+
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+<div class="w3-display-bottommiddle w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag w3-Brown w3-round-xxlarge w3-animate-zoom">Open from 10am to 5pm</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-whit" style="font-size:90px">Arena<br><span class="w3-tag w3-Brown w3-round-xxlarge w3-animate-zoom">Cafeteria</span>
+  </div>
+</header>
+
+<div class="w3-large">
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide w3-Brown w3-round-xxlarge w3-animate-zoom">ABOUT THE CAFE</span></h5>
+    <p>The Cafe was founded in Suratgarh by Mr. Karan Kaler in Suratgarh. It is one of the best Cafe's in Suratgarh. We have superpowerd Shef with Magical touches in his hands who makes Delicious Food here.
+    <p>In addition to our full espresso and brew bar menu, we serve fresh made-to-order breakfast and lunch sandwiches, as well as a selection of sides and salads and other good stuff.</p>
+    <div class="w3-panel w3-leftbar w3-Brown w3-round-xxlarge w3-animate-zoom">
+      <p><i>"Use products from nature for what it's worth - but never too early, nor too late." Fresh is the new sweet.</i></p>
+      <p>Chef, Coffeeist and Owner: Karan Kaler & More..</p>
+    </div>
+    <img src="cafe-2.jpg" style="width:100%;max-width:1000px" class="w3-margin-top w3-round-large w3-animate-zoom">
+    <p><strong>Opening hours:</strong> everyday from 10am to 5pm.</p>
+    <p><strong>Address:</strong>Coming Soon</p>
+  </div>
+</div>
+
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide w3-Brown w3-round-xxlarge w3-animate-zoom">THE MENU</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding w3-Brown w3-round-xxlarge w3-animate-zoom">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="w3-col s6 tablink  w3-round-xxlarge">Eat</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink w3-round-xxlarge">Drink</div>
+      </a>
+    </div>
+<br>
+    <div id="Eat" class="w3-container menu w3-padding-48 w3-card w3-Brown w3-round-xxlarge w3-animate-zoom">
+      <h5>Bread Basket</h5>
+      <p class="w3-text-black">Assortment of fresh baked Garlic breads and Muffins</p><br>
+    
+      <h5>Pizzeria</h5>
+      <p class="w3-text-black">Round like the Earth, warm like comfort, pizza isn’t just food—it’s an experience.
+Born in Naples, Italy, and embraced by the world, it transcends borders, diets, moods, and meal times.</p><br>
+    
+      <h5>Fries</h5>
+      <p class="w3-text-black">Golden, crispy fries—salty perfection in every bite. Irresistible snack, comforting sidekick, loved across generations and borders🍟.</p><br>
+    
+      <h5>Ice Cream</h5>
+      <p class="w3-text-black">Sweet, creamy joy in every lick—ice cream cools hearts and ignites smiles, a timeless treat for all ages🍨.</p><br>
+    
+      <h5>Wraps</h5>
+      <p class="w3-text-black">Flavor-packed and handheld, wraps blend fresh veggies, juicy meats, and sauces in a soft tortilla hug. 🌯 Effortless delight!</p>
+    </div>
+
+    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card w3-Brown w3-round-xxlarge w3-animate-zoom">
+      <h5>Coffee</h5>
+      <p class="w3-text-black">Regular coffee</p><br>
+    
+      <h5>Chocolato</h5>
+      <p class="w3-text-black">Chocolate espresso with milk</p><br>
+    
+      <h5>Corretto</h5>
+      <p class="w3-text-black">Whiskey and coffee</p><br>
+    
+      <h5>Iced tea</h5>
+      <p class="w3-text-black">Hot tea, except not hot</p><br>
+    
+      <h5>Soda</h5>
+      <p class="w3-text-black">Coke, Sprite, Fanta, etc.</p>
+    </div>  
+    <img src="coffee.jpg"
+style="width:100%;max-width:1000px;margin-top:32px;" class="w3-round-large w3-animate-zoom">
+  </div>
+</div>
+
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide w3-Brown w3-round-xxlarge w3-animate-zoom">WHERE TO FIND US</span></h5>
+    <p>Find us at <p w3-padding-48"><span class="w3-tag w3-narrow w3-Brown w3-round-xxlarge w3-animate-zoom">Coming Soon.</p>
+    <img src="Map.jpg" class="w3-image w3-round-large w3-round-large w3-animate-zoom" style="width:100%">
+    <p><span class="w3-tag w3-Brown w3-round-xxlarge w3-animate-zoom">FYI!</span> We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste.</p>
+    <p><strong>Reserve</strong> a table, ask for today's special or just send us a message:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border w3-Light-Grey w3-animate-zoom w3-round-xlarge" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border w3-Light-Grey w3-animate-zoom w3-round-xlarge" type="number" placeholder="How many people" required name="People"></p>
+      <p><input class="w3-input w3-padding-16 w3-border w3-Light-Grey w3-animate-zoom w3-round-xlarge" type="datetime-local" placeholder="Date and time" required name="date" value="2025-08-01T12:00"></p>
+      <p><input class="w3-input w3-padding-16 w3-border w3-Light-Grey w3-animate-zoom w3-round-xlarge" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><button class="w3-button w3-Brown w3-round-xlarge w3-animate-zoom" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+</div>
+
+</div>
+
+<footer class="w3-center w3-light-brown w3-padding-8 w3-large">
+  <p>This website is made by Karan Kaler ©</p>
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
+
